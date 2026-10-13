@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EA1: Interaktiv animierte Scheibe</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <h1>Graphical Visualisation Technologies - EA1: <br>
+       Interaktiv animierte Scheibe</h1>
+
+    <div id="scheiben-anzeige">
+      <img
+        id="scheibe"
+        src="scheibe/scheibe-00.png"
+        alt="Scheibe im Rotationszustand 0 Grad"
+        width="400"
+        height="400"
+      >
+      <p class="bildquelle">
+        Bild der Drehscheibe erstellt und bearbeitet mit Affinity.
+      </p>
+    </div>
+
+    <div class="steuerung">
+      <button id="links" type="button" disabled>← Links (L)</button>
+      <button id="rechts" type="button" disabled>Rechts (R) →</button>
+
+      <!-- Erweiterung 2: Automatik-Button -->
+      <button id="automatik" type="button" disabled aria-pressed="false">
+        Automatik starten (A)
+      </button>
+    </div>
+
+    <p>Tastatur: L = ein Schritt links ||  R = ein Schritt rechts || A = Automatik an/aus</p>
+
+    <div class="glueck-steuerung">
+  <button id="glueck-button" type="button" disabled>
+    Glück versuchen?
+  </button>
+</div>
+
+    <!-- Erweiterung 1: Hüpfender Hase-->
+    <section id="hasen-erweiterung" aria-labelledby="hasen-titel">
+      <h2 id="hasen-titel">Erweiterung 1: Hüpfender Hase</h2>
+
+      <button id="hase-auswahl" type="button" disabled>
+        Hasenanimation anzeigen
+      </button>
+
+      <div id="hasen-anzeige" hidden>
+        <img
+          id="hase"
+          src="hase/hase-00.png"
+          alt="Hase in der Ausgangsposition"
+          width="400"
+          height="400"
+        >
+        <p class="bildquelle">
+          Bild des Hasen erstellt und bearbeitet mit Affinity.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="signatur">
+    Erstellt von Fabian Meintzer in Brandenburg an der Havel
+  </footer>
+  
+</body>
+</html>
